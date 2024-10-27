@@ -466,50 +466,69 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     }
 }
 
-
 /* technology */
+/* Technology section styling */
 .profiles {
     padding: 50px 0;
-    background-color: #e2efff; 
+    background-color: #e2efff;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.section-heading h2 {
-    font-size: 36px; /* Larger heading for impact */
-    margin-bottom: 30px; /* Space below heading */
-    color: #333; /* Darker color for better readability */
+/* Center the main profiles container */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.profiles-content {
+/* Center each profile icon and name */
+.center-profile {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center items */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .single-profile {
-    position: relative;
     padding: 20px;
-    margin: 10px; /* Spacing between icons */
-    border: none; /* Remove border for a cleaner look */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .single-profile:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .tech-logo {
-    width: 80px; /* Uniform logo size */
-    height: 80px; /* Uniform logo height */
-    object-fit: contain; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space between logo and name */
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .profile-icon-name {
-    font-size: 14px; /* Font size for tech name */
-    color: #636a82; /* Color for tech name */
+    font-size: 14px;
+    color: #636a82;
 }
+
+/* Flexbox layout adjustments for row spacing */
+.first-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
 
 
 /* portfolio */
@@ -518,7 +537,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 #portfolio {
     padding: 60px 0;
 }
-
 
 
 .download-icon {
@@ -568,6 +586,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     position: relative;
     height: 360px;
     overflow: hidden;
+    justify-content: center;
 }
 
 #portfolio .portfolio-item figure {
